@@ -1,0 +1,152 @@
+
+/* google-font link */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+
+
+
+/* primary-design */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    /* font-size: 1.1rem; */
+}
+
+body{
+    background-color: hsl(226, 43%, 10%);
+    color: #fff;
+    display: grid;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". . . cc cc cc cc cc cc . . ."
+    ". . . . . . . . . . . .";
+    grid-template-rows: 5rem 10rem;
+   
+    
+}
+
+h1,h4,h5{
+    margin: 0;
+}
+
+
+.card--container{
+    grid-area: cc;
+    display: grid;
+    grid-template-areas: "card--profile card--work card--play card--study"
+    "card--profile card--exercise card--social card--self_care";
+    grid-gap: 1rem;
+}
+
+
+
+
+
+
+
+/* each card */
+
+.card{
+    border-radius: 0.8rem 0.8rem 0 0;
+    /* height: 25rem; */
+    
+}
+.card>svg{
+   
+    height: 2rem;
+}
+.card--profile{
+   
+    grid-area: card--profile;
+    background-color:hsl(235, 46%, 20%) ;
+}
+
+.card--profile>h4{
+    margin: 1rem;
+}
+.card--profile img{
+
+    width: 5rem;
+    border: 2px solid #fff;
+    border-radius: 10rem;
+}
+
+.card--profile__details{
+    padding: 1rem 1rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background-color: hsl(246, 80%, 60%);
+}
+
+
+
+
+
+
+
+.card--work{
+    grid-area: card--work;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.card--play{
+    grid-area: card--play;
+    background: hsl(195, 74%, 62%);
+}
+
+.card--study{
+    grid-area: card--study;
+    background: hsl(348, 100%, 68%);
+}
+
+.card--exercise{
+    grid-area: card--exercise;
+    background: hsl(145, 58%, 55%);
+}
+
+.card--social{
+    grid-area: card--social;
+    background: hsl(264, 64%, 52%);
+}
+
+.card--self_care{
+    grid-area: card--self_care;
+    background-color: hsl(43, 84%, 65%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.card--content{
+    padding: 1rem 1.5rem;
+    background-color: hsl(235, 46%, 20%);
+    display: grid;
+    grid-template-areas: " heading dot_svg"
+    " time time"
+    " description description";
+    grid-template-rows: 2rem 3.5rem 2rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+   
+}
+
+.dot-svg{
+    grid-area: dot_svg;
+}
+.heading{
+    grid-area: heading;
+}
+.time{
+    grid-area: time;
+}
+.description{
+    grid-area: description;
+}
+
