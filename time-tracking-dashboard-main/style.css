@@ -56,11 +56,15 @@ h1,h4,h5{
 .card>svg{
    
     height: 2rem;
+    margin-left: 8rem;
 }
 .card--profile{
    
     grid-area: card--profile;
     background-color:hsl(235, 46%, 20%) ;
+    border-radius: 0.8rem;
+    width: 12rem;
+    
 }
 
 .card--profile>h4{
@@ -69,7 +73,7 @@ h1,h4,h5{
 .card--profile img{
 
     width: 5rem;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     border-radius: 10rem;
 }
 
@@ -77,6 +81,8 @@ h1,h4,h5{
     padding: 1rem 1rem;
     border-radius: 0.8rem 0.8rem 0 0;
     background-color: hsl(246, 80%, 60%);
+    border-radius: 0.8rem;
+    width: 12rem;
 }
 
 
@@ -135,6 +141,10 @@ h1,h4,h5{
     grid-template-rows: 2rem 3.5rem 2rem;
     border-radius: 0.8rem 0.8rem 0 0;
    
+}
+
+.card--content>svg{
+    margin-left: 6rem;
 }
 
 .dot-svg{
